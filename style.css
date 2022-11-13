@@ -25,6 +25,11 @@ a {
     justify-content: space-between;
 }
 
+.align-center{
+    align-items: center;
+}
+
+
 
 
 
@@ -139,7 +144,7 @@ a {
     font-weight: 700;
     font-size: 18px;
     line-height: 1.222px;
-    background-image: url(img/arrowright.svg);
+   
 
 }
 
@@ -165,6 +170,122 @@ a {
     color:#FBD784;
     transform: translateY(-10%);
 }
+
+/* -------------------------------header-end--------------------------------------------- */
+
+
+
+
+.container{
+    max-width: 1492px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.article {
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+
+.article-text {
+    position: relative;
+    padding-left: 150px;
+    max-width: 782px;
+    margin-bottom: 27px;
+}
+.article-text::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(-50%);
+    display: block;
+    content: attr(data-number);
+    font-weight: 700;
+    font-size: 240px;
+    line-height: 240px;
+    width: 240px;
+    height: 240px;
+    color: rgba(255, 255, 255, 0.1);
+}
+
+.article-subtitle {
+    position: relative;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.222;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    padding-left: 96px;
+    margin-bottom: 32px;
+    color: #FBD784;
+
+}
+.article-subtitle::before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 72px;
+    height: 2px;
+    background-color:#FBD784;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.article-title {
+    margin-bottom: 27px;
+    max-width: 555px;
+    font-family: 'Playfair Display', serif; 
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 1.2;
+    
+
+}
+.article-desc {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.78;
+   
+
+}
+
+.article-link {
+    position: relative;
+    padding-right: 40px;
+    font-size: 18px;
+    line-height: 1.222px;
+    transition: all 0.3s;
+}
+
+.article-link::after{
+    display: block;
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 16px;
+    background-image: url(img/arrowright.svg);
+    background-repeat: no-repeat;
+    
+}
+
+.article-link:hover{
+   
+    color:#FBD784;
+    transform: translateY(-10%);
+}
+
 
 
 
