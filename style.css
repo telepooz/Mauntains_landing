@@ -44,7 +44,7 @@ a {
 
 .container-wide{
     margin: 0 auto;
-    width: 1790px; 
+    max-width: 1790px; 
     padding: 0 15px;
 }
 
@@ -81,10 +81,24 @@ a {
 }
 
 .login {
+    padding-left: 30px;
+    position: relative;
     font-size: 17px;
     line-height: 21px;
     font-weight: 700;
     transition: all 0.3s;
+}
+
+.login::before{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url(img/acc.svg);
+    display: block;
+    content: '';
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .login:hover{
@@ -168,7 +182,7 @@ a {
 
 .link:hover{
     color:#FBD784;
-    transform: translateY(-10%);
+    transform: translateY(-20%);
 }
 
 /* -------------------------------header-end--------------------------------------------- */
@@ -259,6 +273,7 @@ a {
 }
 
 .article-link {
+    display: inline-block;
     position: relative;
     padding-right: 40px;
     font-size: 18px;
@@ -281,10 +296,94 @@ a {
 }
 
 .article-link:hover{
-   
+    
     color:#FBD784;
-    transform: translateY(-10%);
+    transform: translateY(-20%);
 }
+
+
+.footer {
+    padding-bottom: 120px;
+}
+
+.footer-copyright {
+    display: flex;
+    flex-direction: column;
+}
+.footer-copyright-logo {
+    margin-bottom: 24px;
+}
+
+.logo {
+}
+
+.footer-copyright-desc {
+    max-width: 303px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.78;
+}
+
+.footer-copyright-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.78;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: auto;
+}
+
+.footer-nav {
+    max-width: 200px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.78;
+}
+
+.footer-nav + .footer-nav{
+    margin-left: 212px;
+}
+
+.footer-nav ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+   
+}
+
+.footer-nav li{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 16px;
+}
+.footer-nav li:last-child{
+    margin-bottom: 0;
+}
+
+.footer-nav-wrapper {
+    display: flex;
+}
+
+.footer-nav a{
+    position: relative;
+    
+}
+
+
+
+.footer-nav-title {
+    margin-bottom: 24px;
+    color: #FBD784;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+
+
+
+
+
+
 
 
 
